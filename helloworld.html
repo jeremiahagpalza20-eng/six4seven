@@ -1,0 +1,169 @@
+<!DOCTYPE 
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <title>SIX4SEVEN</title>
+      <style>
+      
+      body {
+      font-family: 'Syne', sans-serif; 
+          }
+      
+      .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      
+      .image-container {
+        text-align: center;
+        width: 100%;
+      }
+      
+      .links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+      
+      </style>
+    </head>
+  
+  
+    <body class="w3-white">
+        <!-- Image and name container. Change to your picture here. -->
+      <div class="image-container">
+      <img src="https://uploads.onecompiler.io/443zqmxw9/443zpcw4q/six4seven.png" class="w3-margin" alt="Person" max-width="100%" height="150px" style="border-radius: 50%;">
+      
+       <!-- Content. Add your bio here. -->
+       <div class="w3-center">
+       <h2 class="w3-text-black"><strong>SIX4SEVEN</strong></h2>
+       <p>We Thank you for visiting our official website! . if you want to join sumbit your email down below.</p>
+       </div>
+  
+<style>
+      html, body {
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        height: 120%;
+        color: white;
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center;     /* Center vertically */
+        text-align: center;
+      }
+
+      .container {
+        width: 90%;
+        max-width: 400px;
+      }
+
+      .w3-button {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+        font-size: 18px;
+        background-color: #00bcd4 !important;
+        color: #fff !important;
+        border-radius: 50px;
+        transition: all 0.3s;
+      }
+
+      .w3-button:hover {
+        background-color: #0097a7 !important;
+        transform: scale(1.03);
+      }
+
+      .countdown {
+        display: block;
+        font-size: 14px;
+        margin-top: 5px;
+        color: #e0e0e0;
+      }
+
+      input[type="email"] {
+        width: 90%;
+        padding: 10px;
+        border-radius: 30px;
+        border: 1px solid #00bcd4;
+        margin-top: 15px;
+        text-align: center;
+      }
+
+      button[type="submit"] {
+        width: 90%;
+        margin-top: 8px;
+        border-radius: 10px;
+        background-color: #00bcd4;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #0097a7;
+        transform: scale(1.03);
+      }
+    </style>
+
+       <!-- Buttons -->
+      <a href="#" id="btn1" class="w3-button">FOUNDER<span id="cd1" class="countdown"></span></a>
+      <a href="#" id="btn2" class="w3-button">S4S GC<span id="cd2" class="countdown"></span></a>
+      <a href="#" id="btn3" class="w3-button">MY FRIENDS <span id="cd3" class="countdown"></span></a>
+      <a href="#" id="btn4" class="w3-button">MY BLOG <span id="cd4" class="countdown"></span></a>
+ 
+  <!-- EMAIL FORM -->
+      <form action="https://formspree.io/f/xqawzelw" method="POST">
+        <input type="email" name="email" placeholder="Your email..." required>
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+
+    <script>
+      // Function for per-button countdown + redirect
+      function setupCountdown(buttonId, countdownId, seconds, redirectUrl) {
+        const btn = document.getElementById(buttonId);
+        const cd = document.getElementById(countdownId);
+
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+          let timeLeft = seconds;
+          cd.innerHTML = "Redirecting in " + timeLeft + "s...";
+          btn.style.pointerEvents = "none"; // Disable click
+
+          const timer = setInterval(() => {
+            timeLeft--;
+            cd.innerHTML = "Redirecting in " + timeLeft + "s...";
+            if (timeLeft <= 0) {
+              clearInterval(timer);
+              cd.innerHTML = "Redirecting...";
+              window.open(redirectUrl, "_blank");
+              btn.style.pointerEvents = "auto";
+              cd.innerHTML = "";
+            }
+          }, 1000);
+        });
+      }
+
+      // Assign countdowns + destinations
+      setupCountdown("btn1", "cd1", 50, "https://www.facebook.com/dainianlimo/");
+      setupCountdown("btn2", "cd2", 600, "https://m.me/j/AbY6EZHxE0kCs8H-/");
+      setupCountdown("btn3", "cd3", 10000000000, "https://uploads.onecompiler.io/443zqmxw9/4442gapbp/download%20(2).jpg");
+      setupCountdown("btn4", "cd4", 5, "https://myblogsite.com/");
+    </script>
+
+  </body>  
+  </html>
+  
